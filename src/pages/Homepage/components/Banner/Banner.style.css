@@ -79,5 +79,6 @@ animation: slideUp 1s ease-out forwards;
 @media all and (max-width:479px) {
   .banner-area{
   width: 80%;
+  font-size: .5em;
 }
 }
