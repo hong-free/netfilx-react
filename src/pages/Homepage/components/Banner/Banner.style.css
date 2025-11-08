@@ -36,6 +36,7 @@
   z-index: 2;
 }
 .banner-area h1{
+  font-size: 36px;
   font-family: 'NexonLv1Gothic';
    font-weight: 700;
    color:rgb(193, 14, 14);
@@ -45,7 +46,7 @@ transform: translateY(100%);
 }
 .banner-area h4{
   font-family: 'NexonLv1Gothic';
-  font-size: 1.2em;
+  font-size: 16px;
   line-height: 1.5em;
   transform: translateY(100%); 
 opacity: 0;
@@ -66,13 +67,19 @@ animation: slideUp 1s ease-out forwards;
   .banner-area{
   width: 50%;
   }
+  .banner-area h1{
+    font-size: 26px;
+  }
 } 
 
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
 @media all and (min-width:480px) and (max-width:767px) {
   .banner-area{
   width: 80%;
-  font-size: .7em;
+  font-size: 14px;
+  }
+  .banner-area h1{
+    font-size: 24px;
   }
 } 
 
@@ -80,6 +87,10 @@ animation: slideUp 1s ease-out forwards;
 @media all and (max-width:479px) {
   .banner-area{
   width: 80%;
-  font-size: .5em;
+  font-size: 12px;
 }
+  .banner-area h1{
+    font-size: 20px;
+  }
+
 }
