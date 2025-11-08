@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+.banner{
+  height: 56vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    display: flex;
+  justify-content: center;
+  padding: 2em;
+  flex-direction: column;
+}
+.banner:before{
+  content:'';
+  background: linear-gradient(to top, black, transparent);
+  position:absolute;
+  left: 0;
+  height: 56vh;
+  width: 100%;
+}
+.banner-area{
+
+  color:#fff;
+  width: 46%;
+  z-index: 2;
+}
+.banner-area h1{
+  font-family: 'NexonLv1Gothic';
+   font-weight: 700;
+   color:rgb(193, 14, 14);
+transform: translateY(100%); 
+ opacity: 0;
+ animation: slideUp 0.8s ease-out forwards;
+}
+.banner-area h4{
+  font-family: 'NexonLv1Gothic';
+  font-size: 1.2em;
+  line-height: 1.5em;
+  transform: translateY(100%); 
+opacity: 0;
+animation: slideUp 1s ease-out forwards;
+}
+ @keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+      }
+    100% {
+    transform: translateY(0); 
+   opacity: 1;
+            }
+        }
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+  .banner-area{
+  width: 50%;
+  }
+} 
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+  .banner-area{
+  width: 80%;
+  }
+} 
+
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+  .banner-area{
+  width: 80%;
+}
+}
