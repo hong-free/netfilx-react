@@ -16,9 +16,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-    display: flex;
+  display: flex;
   justify-content: center;
-  padding: 2em;
+  padding-left: 2em;
   flex-direction: column;
 }
 .banner:before{
@@ -45,8 +45,8 @@ transform: translateY(100%);
 }
 .banner-area h4{
   font-family: 'NexonLv1Gothic';
-  font-size: 16px;
-  line-height: 1em;
+  font-size: 24px;
+  line-height: 24px;
   transform: translateY(100%); 
 opacity: 0;
 animation: slideUp 1s ease-out forwards;
@@ -67,7 +67,10 @@ animation: slideUp 1s ease-out forwards;
   width: 50%;
   }
   .banner-area h1{
-    font-size: 26px;
+    font-size: 28px;
+  }
+   .banner-area h4{
+    font-size: 18px;
   }
 } 
 
@@ -81,17 +84,21 @@ animation: slideUp 1s ease-out forwards;
   .banner-area h1{
     font-size: 24px;
   }
+    .banner-area h4{
+    font-size: 18px;
+  }
 } 
 
 /* 모바일 세로 (해상도 ~ 479px)*/ 
 @media all and (max-width:479px) {
   .banner-area{
-   
   width: 80%;
-  font-size: 12px;
 }
   .banner-area h1{
     font-size: 20px;
+  }
+    .banner-area h4{
+    font-size: 14px;
   }
 
 }
