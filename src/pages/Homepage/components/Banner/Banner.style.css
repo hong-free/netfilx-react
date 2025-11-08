@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  padding-left: 2em;
+
   flex-direction: column;
 }
 .banner:before{
@@ -32,6 +32,7 @@
 .banner-area{
   color:#fff;
   width: 46%;
+    padding: 2em;
   z-index: 2;
 }
 .banner-area h1{
@@ -80,6 +81,7 @@ animation: slideUp 1s ease-out forwards;
   width: 80%;
   font-size: 14px;
    padding-top: 10px;
+   
   }
   .banner-area h1{
     font-size: 24px;
