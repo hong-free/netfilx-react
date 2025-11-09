@@ -71,14 +71,14 @@ animation: slideUp 1s ease-out forwards;
   font-size: 1.2rem;
 }
 .banner-btn button:nth-child(2){
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(102, 101, 101);
   color: #fff;
 }
 .banner-btn button:hover:nth-child(2){
-  background-color: rgb(75, 74, 74);
+  background-color: rgb(53, 53, 52);
 }
-.banner-btn button:hover{
-  background-color: rgb(53, 53, 53);
+.banner-btn button:hover:nth-child(1){
+  background-color: rgb(49, 49, 49);
   color: white;
 
 }
