@@ -10,6 +10,12 @@
     font-weight: 700;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
 
 .banner{
   height: 56vh;
@@ -18,7 +24,6 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-
   flex-direction: column;
 }
 .banner:before{
@@ -32,7 +37,7 @@
 .banner-area{
   color:#fff;
   width: 46%;
-    padding: 2em;
+  padding-left: 5rem;
   z-index: 2;
 }
 .banner-area h1{
@@ -45,13 +50,41 @@ transform: translateY(100%);
  animation: slideUp 0.8s ease-out forwards;
 }
 .banner-area h4{
-  font-family: 'NexonLv1Gothic';
-  font-size: 24px;
+  font-family: 'Escoredream';
+  font-size: 20px;
   line-height: 24px;
   transform: translateY(100%); 
 opacity: 0;
 animation: slideUp 1s ease-out forwards;
 }
+.banner-btn button{
+ max-width: 140px;
+ width:50%;
+ height: 50px;
+ border-radius: 10px; 
+ margin-right: 5px;
+ border:none;
+ margin-top: 10px;
+}
+.banner-btn button svg{
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.banner-btn button:nth-child(2){
+  background-color: rgb(53, 53, 53);
+  color: #fff;
+}
+.banner-btn button:hover:nth-child(2){
+  background-color: rgb(75, 74, 74);
+}
+.banner-btn button:hover{
+  background-color: rgb(53, 53, 53);
+  color: white;
+
+}
+
+
+
  @keyframes slideUp {
   0% {
     transform: translateY(100%);
@@ -65,10 +98,10 @@ animation: slideUp 1s ease-out forwards;
 /* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
 @media all and (min-width:768px) and (max-width:1023px) { 
   .banner-area{
-  width: 50%;
+    padding-left: 2rem;
   }
   .banner-area h1{
-    font-size: 28px;
+    font-size:3rem;
   }
    .banner-area h4{
     font-size: 18px;
@@ -78,28 +111,49 @@ animation: slideUp 1s ease-out forwards;
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
 @media all and (min-width:480px) and (max-width:767px) {
   .banner-area{
-    width: 80%;
     font-size: 14px;
+     padding-left: 2rem;
+      width: 80%;
   }
   .banner-area h1{
     padding-top: 50px;
     font-size: 24px;
   }
     .banner-area h4{
+     
     font-size: 18px;
+    overflow: hidden;
+   display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
   }
 } 
 
 /* 모바일 세로 (해상도 ~ 479px)*/ 
 @media all and (max-width:479px) {
   .banner-area{
-  width: 80%;
+      width: 80%;
+    padding-left: 2rem;
+}
+.banner-btn button{
+  width: 30%;
+  height: 40px;
+ margin-bottom: 10px;
+ 
+}
+
+.banner-btn button svg{
+font-size: 1rem;
 }
   .banner-area h1{
     font-size: 20px;
   }
-    .banner-area h4{
-    font-size: 14px;
+ .banner-area h4{
+ font-size: 14px;
+  overflow: hidden;
+   display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
   }
 
 }

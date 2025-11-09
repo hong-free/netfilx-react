@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+.MovieSlider-title{
+     font-family: 'Paperozi';
+     font-size: 2rem;
+     padding-top: 50px;
+}
+ .container{
+  margin:0 auto;
+ }
+ .carousel-container{
+  height: 500px;
+  overflow: hidden;
+ }
+
+ 
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+} 
+
+@media all and (max-width:480px){
+}

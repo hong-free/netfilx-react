@@ -1,0 +1,71 @@
+.movie-card{
+    width:100%;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.movie-card-area:hover{
+  transform: scale(1.12) translateZ(10px);
+  z-index: 100;
+  transition: transform 1s;
+}
+.movieCard-info{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43,41,41,.9);
+  transition: 1s;
+  color: white;
+  padding: 10px;
+  overflow-wrap: break-word;
+  
+}
+.movieCard-info:hover{
+  opacity: 1;
+  padding: 10px;
+ 
+ 
+}
+.movie-title{
+  text-align: center;
+  font-size: 1.3rem;
+}
+.adult-badge{
+ position: absolute;
+ right:15px;
+ bottom: 2px;
+}
+.popularity{
+  position: absolute;
+ left:15px;
+ bottom: 30px;
+}
+.vote_average span,
+.popularity span{
+  margin-right: 10px;
+  display: inline-block;
+}
+.vote_average{
+position: absolute;
+ left:15px;
+ bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+  /* .movie-card-area:hover{
+  transform: scale(1.1) translateZ(5px);
+  z-index: 100;
+  transition: transform 0.5s; */
+}
+
+@media all and (max-width:430px){
+
+}
+
+
