@@ -65,7 +65,8 @@ position: absolute;
 }
 
 @media all and (max-width:430px){
-
+.movie-card{
+    height: 250px;
 }
 
 

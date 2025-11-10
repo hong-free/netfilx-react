@@ -7,7 +7,6 @@ import { BsCaretRightFill, BsFillInfoCircleFill } from "react-icons/bs";
 
 const Banner = () => {
   const { data, isLoading, isError, error } = usePopularMoviesQuery();
-  console.log(data);
   if (isLoading) {
     return (
       <div

@@ -2,8 +2,19 @@ import React from "react";
 import { Badge } from "react-bootstrap";
 import "./MovieCard.style.css";
 import { BsFillHeartFill, BsFillHandThumbsUpFill } from "react-icons/bs";
+import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
 
 const MovieCard = ({ movie }) => {
+  const { data: genreData } = useMovieGenreQuery();
+  const showGenre=(genreIdList)=>{
+    if(!genreData) return []
+    const genreNameList=genreIdList.map((id)=>{
+      const genreObj=genreData.find((genre)=>genre.id==id)
+      return genreObj.name;
+    })
+    
+    return genreNameList;
+  }
   return (
     <div className="movie-card-area">
       <div
@@ -18,7 +29,7 @@ const MovieCard = ({ movie }) => {
         <div className="movieCard-info">
           <h1 className="movie-title">{movie.title}</h1>
           <div>
-            {movie.genre_ids.map((id, index) => (
+            {showGenre(movie.genre_ids).map((id, index) => (
               <Badge bg="danger" key={index}>
                 {id}
               </Badge>

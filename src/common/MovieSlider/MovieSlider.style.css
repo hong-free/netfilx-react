@@ -27,4 +27,9 @@
 } 
 
 @media all and (max-width:480px){
+   .carousel-container{
+  height: 250px;
+ }
+
 }
+
