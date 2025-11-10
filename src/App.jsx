@@ -8,7 +8,6 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./pages/Homepage/components/Footer/Footer";
 
-
 //홈페이지 /
 //영화 전체보여주는 페이지(서치) /movies
 //영화 디테일 페이지 /movies/:id
@@ -37,7 +36,7 @@ function App() {
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-   <Footer/>
+      <Footer path="footer" element={<Footer />} />
     </div>
   );
 }
