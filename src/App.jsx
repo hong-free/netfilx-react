@@ -33,10 +33,9 @@ function App() {
           {/* <Route path="/movies" element={<MoviesPAge />}></Route>
           <Route path="/movies/:id" element={<MoviesDetailPage />}></Route> */}
         </Route>
-
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="footer" element={<Footer />} />
       </Routes>
-      <Footer path="footer" element={<Footer />} />
+       <Footer/>
     </div>
   );
 }
