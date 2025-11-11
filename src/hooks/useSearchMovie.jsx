@@ -11,6 +11,7 @@ export const useSearchMovieQuery = ({ keyword, page }) => {
   return useQuery({
     queryKey: ["movie-search", { keyword, page }],
     queryFn: () => fetchSearchMovie({ keyword, page }),
+    suspense:true,
     select: (result) => result.data,
   });
 };

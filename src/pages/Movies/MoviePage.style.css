@@ -1,3 +1,51 @@
 ul.pagination{
   
 }
+.page-item{
+  color:#d52e08;
+  background-color: #000;
+}
+
+.page-link{
+  color: #d52e08;
+   background-color: #000;
+     border: 0;
+}
+.pagination{
+ background-color: #d52e08;
+}
+.page-link:hover:not(.active-link) {
+  background-color: #d52e08;
+  color:#fff;
+}
+.active{
+   background-color: #d52e08;
+}
+
+.page-item.disabled .page-link{
+  background-color: #ab1515;
+}
+.page-item:hover .page-link{
+  background-color: #ab1515;
+}
+.page-item.active .page-link{
+  background-color: #ab1515;
+    color: white;     
+}
+.page-item.visited  .page-link{
+  background-color: #ab1515;
+    color: white;     
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:480px){
+
+}

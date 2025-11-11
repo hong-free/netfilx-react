@@ -10,6 +10,7 @@ export const usePopularMoviesQuery = () => {
   return useQuery({
     queryKey: ["movie_popular"],
     queryFn: fetchPopularMovies,
+    suspense:true,
     select: (result) => result.data,
   });
 };
