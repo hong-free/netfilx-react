@@ -15,9 +15,6 @@
   background-color: #d52e08;
   color:#fff;
 }
-.active{
-   background-color: #d52e08;
-}
 
 .page-item.disabled .page-link{
   background-color: #ab1515;
