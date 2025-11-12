@@ -34,8 +34,6 @@
 .movieCard-info:hover{
   opacity: 1;
   padding: 10px;
- 
- 
 }
 .movie-title{
   text-align: center;
@@ -45,6 +43,11 @@
  position: absolute;
  right:15px;
  bottom: 2px;
+
+}
+.badge-genre{
+ display: inline-block;
+ margin-right: 5px;
 }
 .popularity{
   position: absolute;
@@ -74,8 +77,6 @@ position: absolute;
 }
 
 @media all and (max-width:464px){
-.movie-card{
-    height: 250px;
-}
+
 }
 

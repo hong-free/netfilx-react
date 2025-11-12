@@ -5,7 +5,8 @@
     font-display: swap;
 }
 .movie-slider{
- margin:10px;
+ margin:5px;
+ margin-left: -4px;
  box-sizing: border-box
 }
 .MovieSlider-title{
@@ -17,7 +18,6 @@
   margin:0 auto;
  }
  .carousel-container{
-    width:1425px;    
   height: 500px;
   overflow: hidden;
   
@@ -32,9 +32,7 @@
 } 
 
 @media all and (max-width:464px){
-   .carousel-container{
-  height: 250px;
- }
+ 
 
 }
 

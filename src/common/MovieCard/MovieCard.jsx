@@ -6,27 +6,28 @@ import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
 
 const MovieCard = ({ movie }) => {
   const { data: genreData } = useMovieGenreQuery();
-  const showGenre=(genreIdList)=>{
-    if(!genreData) return []
-    const genreNameList=genreIdList.map((id)=>{
-      const genreObj=genreData.find((genre)=>genre.id==id)
+  const showGenre = (genreIdList) => {
+    if (!genreData) return [];
+    const genreNameList = genreIdList.map((id) => {
+      const genreObj = genreData.find((genre) => genre.id == id);
       return genreObj.name;
-    })
-    
+    });
+
     return genreNameList;
-  }
+  };
   return (
     <div className="movie-card-area">
       <div
-        style={{ backgroundImage: `url(https://media.themoviedb.org/t/p/original${movie.poster_path})` }}
-      className="movie-card"
-    >
-   
+        style={{
+          backgroundImage: `url(https://media.themoviedb.org/t/p/original${movie.poster_path})`,
+        }}
+        className="movie-card"
+      >
         <div className="movieCard-info">
           <h1 className="movie-title">{movie.title}</h1>
           <div>
             {showGenre(movie.genre_ids).map((id, index) => (
-              <Badge bg="danger" key={index}>
+              <Badge bg="danger " key={index} className="badge-genre">
                 {id}
               </Badge>
             ))}
