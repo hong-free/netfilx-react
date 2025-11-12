@@ -2,22 +2,23 @@
   color:#d52e08;
   background-color: #000;
 }
-
 .page-link{
-  color: #d52e08;
+  color: #f5f5f5;
    background-color: #000;
+   border-bottom-color:#000;
      border: 0;
 }
-.pagination{
- background-color: #d52e08;
-}
-.page-link:hover:not(.active-link) {
-  background-color: #d52e08;
-  color:#fff;
-}
+.pagination.active  {
+ background-color: none;
 
+}
+.page-link:hover {
+  background-color: #d52e08;
+  
+  color:#ffffff;
+}
 .page-item.disabled .page-link{
-  background-color: #ab1515;
+  background-color: #5c0707;
 }
 .page-item:hover .page-link{
   background-color: #ab1515;
@@ -28,18 +29,6 @@
 }
 .page-item.visited  .page-link{
   background-color: #ab1515;
-    color: white;     
+    color: rgb(222, 43, 43);     
 }
 
-
-
-
-
-
-
-
-
-
-@media all and (max-width:480px){
-
-}

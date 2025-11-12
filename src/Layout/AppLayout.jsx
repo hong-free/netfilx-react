@@ -11,12 +11,25 @@ import "./AppLayout.style.css";
 const AppLayout = () => {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
+
   const searchByKeyword = (event) => {
     event.preventDefault();
+    if (!keyword.trim()) {
+      // // 3. 키워드가 비어있으면 (또는 공백만 있으면) 검색을 수행하지 않습니다.
+      // // 사용자에게 알림을 주거나, 함수 실행을 중단합니다.
+      // alert("검색어를 입력해주세요.");
+      navigate(`/movies`);
+      setKeyword("");
+      alert("검색어를 입력해주세요.");
+      return;
+    }
     //위에 url을 바꿔주기
     navigate(`/movies?q=${keyword}`);
     setKeyword("");
+
+    return; // 함수 실행을 여기서 중단합니다.
   };
+
   return (
     <div>
       <Navbar expand="lg" bg="dark" variant="dark">
@@ -51,7 +64,9 @@ const AppLayout = () => {
                 className="me-2 custom-gray-control"
                 aria-label="Search"
               />
-              <Button variant="outline-danger" type="submit">Search</Button>
+              <Button variant="outline-danger" type="submit">
+                Search
+              </Button>
             </Form>
           </Navbar.Collapse>
         </Container>

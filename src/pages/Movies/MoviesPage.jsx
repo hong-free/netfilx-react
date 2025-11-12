@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useNavigate } from "react";
 import { useSearchMovieQuery } from "../../hooks/useSearchMovie";
 import { useSearchParams } from "react-router";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
@@ -14,6 +14,10 @@ const MoviesPage = () => {
   const handlePageClick = ({ selected }) => {
     setPage(selected + 1);
   };
+  useEffect(() => {
+    setPage(1);
+  }, [`${keyword}`]);
+
   const { data, isLoading, isError, error } = useSearchMovieQuery({
     keyword,
     page,
@@ -24,7 +28,7 @@ const MoviesPage = () => {
   if (isError) {
     return <Alert variant="danger"> {error.message}</Alert>;
   }
-
+ 
   return (
     <div>
       <Container>
