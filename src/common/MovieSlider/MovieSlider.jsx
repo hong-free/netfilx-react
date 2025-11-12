@@ -9,12 +9,12 @@ const MovieSlider = ({ title, movies, responsive }) => {
     <div>
       <div className="container">
         <h1 className="MovieSlider-title">{title}</h1>
-        <Carousel
+        <Carousel 
           partialVisible={true}
           className="carousel"
           infinite={true}
           // centerMode={true}
-          itemClass="movie-slider p-1"
+          itemClass="movie-slider"
           containerClass="carousel-container"
           responsive={responsive}
           focusOnSelect={true}

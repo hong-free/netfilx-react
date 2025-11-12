@@ -18,14 +18,10 @@ const MovieCard = ({ movie }) => {
   return (
     <div className="movie-card-area">
       <div
-        className="movie-card "
-        style={{
-          backgroundImage:
-            "url(" +
-            `https://media.themoviedb.org/t/p/w533_and_h300_bestv2${movie.poster_path}` +
-            ")",
-        }}
-      >
+        style={{ backgroundImage: `url(https://media.themoviedb.org/t/p/original${movie.poster_path})` }}
+      className="movie-card"
+    >
+   
         <div className="movieCard-info">
           <h1 className="movie-title">{movie.title}</h1>
           <div>

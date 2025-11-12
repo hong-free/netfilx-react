@@ -4,7 +4,10 @@
     font-weight: 700;
     font-display: swap;
 }
-
+.movie-slider{
+ margin:10px;
+ box-sizing: border-box
+}
 .MovieSlider-title{
      font-family: 'Paperozi';
      font-size: 2rem;
@@ -14,8 +17,10 @@
   margin:0 auto;
  }
  .carousel-container{
+    width:1425px;    
   height: 500px;
   overflow: hidden;
+  
  }
 
  
