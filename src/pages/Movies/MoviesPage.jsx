@@ -17,6 +17,7 @@ const MoviesPage = () => {
   useEffect(() => {
     setPage(1);
   }, [`${keyword}`]);
+ 
 
   const { data, isLoading, isError, error } = useSearchMovieQuery({
     keyword,
@@ -28,7 +29,7 @@ const MoviesPage = () => {
   if (isError) {
     return <Alert variant="danger"> {error.message}</Alert>;
   }
- 
+
   return (
     <div>
       <Container>

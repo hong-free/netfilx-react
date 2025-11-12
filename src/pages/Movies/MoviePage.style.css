@@ -8,13 +8,15 @@
    border-bottom-color:#000;
      border: 0;
 }
+.pagination{
+  background-color: #d52e08;
+}
 .pagination.active  {
- background-color: none;
+ background-color: #d52e08;
 
 }
 .page-link:hover {
   background-color: #d52e08;
-  
   color:#ffffff;
 }
 .page-item.disabled .page-link{
@@ -25,7 +27,7 @@
 }
 .page-item.active .page-link{
   background-color: #ab1515;
-    color: white;     
+  color: white;     
 }
 .page-item.visited  .page-link{
   background-color: #ab1515;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -11,10 +11,10 @@ import "./AppLayout.style.css";
 const AppLayout = () => {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
-
   const searchByKeyword = (event) => {
     event.preventDefault();
-    if (!keyword.trim()) {
+    const trimKeyword = keyword.trim();
+    if (!trimKeyword) {
       // // 3. 키워드가 비어있으면 (또는 공백만 있으면) 검색을 수행하지 않습니다.
       // // 사용자에게 알림을 주거나, 함수 실행을 중단합니다.
       // alert("검색어를 입력해주세요.");
@@ -23,6 +23,7 @@ const AppLayout = () => {
       alert("검색어를 입력해주세요.");
       return;
     }
+
     //위에 url을 바꿔주기
     navigate(`/movies?q=${keyword}`);
     setKeyword("");
@@ -34,13 +35,15 @@ const AppLayout = () => {
     <div>
       <Navbar expand="lg" bg="dark" variant="dark">
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Nav.Link as={Link} to="/ ">
             <img
               width={100}
+              as={Link}
+              to="/ "
               src="https://wallpapers.com/images/hd/netflix-logo-red-background-rbt3azw93fwahji6.png"
               alt="logo"
             />
-          </Navbar.Brand>
+          </Nav.Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
