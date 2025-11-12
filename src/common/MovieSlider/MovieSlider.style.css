@@ -17,21 +17,22 @@
   margin:0 auto;
  }
  .carousel-container{
+   margin:0 auto;
   height: 500px;
   overflow: hidden;
   
  }
 
- 
-@media (max-width: 1024px) {
+
+
+
+@media all and (max-width:1024px) {
+ .carousel-container{
+   margin:0 auto;
+  height: 400px;
   
-}
+ }
 
-@media (max-width: 768px) {
-} 
-
-@media all and (max-width:464px){
- 
 
 }
 

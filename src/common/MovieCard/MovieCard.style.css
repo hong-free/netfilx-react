@@ -1,5 +1,5 @@
 .movie-card{
-     width:220px;
+     width:100%;
    height: 330px;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@
 
 
 .movie-card-area{
-  width:220px;
+   width:100%;
    height: 330px;
   position: relative;
 }
@@ -22,7 +22,7 @@
 }
 .movieCard-info{
   opacity: 0;
-    width:220px;
+    width:100%;
    height: 330px;
   background-color: rgba(43,41,41,.9);
   transition: 1s;
@@ -65,18 +65,14 @@ position: absolute;
  bottom: 10px;
 }
 
-@media (max-width: 1024px) {
-  
+@media all and (max-width:1024px) {
+.movie-card-area,.movie-card,.movieCard-info{
+   height: 280px;
+  position: relative;
 }
 
-@media (max-width: 768px) {
-  /* .movie-card-area:hover{
-  transform: scale(1.1) translateZ(5px);
-  z-index: 100;
-  transition: transform 0.5s; */
-}
-
-@media all and (max-width:464px){
 
 }
+
+
 
