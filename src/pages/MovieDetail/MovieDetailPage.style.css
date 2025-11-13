@@ -1,0 +1,71 @@
+
+
+.movieDetail-banner-area{
+width:100%;
+  height: 56vh;
+  position: relative;
+}
+.movieDetail-banner  {
+  width:100%;
+  height: 56vh;
+background-size: cover;
+    background-position: top;
+      border-radius: 10px;
+    background-repeat: no-repeat;
+
+    
+}
+
+.movieDetail-banner:before{
+   content:'';
+  background: linear-gradient(to top, black, transparent);
+  position:absolute;
+  left: 0;
+  height: 56vh;
+  width: 100%;
+}
+ .detail-info-area .banner-area{
+  position: absolute;
+  padding-top: 60px;
+  right: 0;
+
+}
+.movieDetail-banner-area .banner-area h1{
+  padding-left: 0;
+  color:#fff;
+  text-align: left;
+}
+.movieDetail-banner-area .banner-btn{
+right: 0;
+
+}
+.movie-detail{
+  position: relative;
+  width: 100%;
+ 
+}
+.detail-area{
+  position:absolute;
+  top:50px;
+  left: 0;
+  right: 0;
+  margin-bottom: 100px;
+}
+.detail-top{
+  margin-bottom: 100px;
+}
+.detail-poster-area {
+ padding-left: 100px;
+}
+.detail-info-area .movie-title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  text-align: left;
+}
+.detail-info-area .banner-btn{
+  margin-top: 50px;
+}
+.movie-detail.footer{
+  bottom: 0;
+}

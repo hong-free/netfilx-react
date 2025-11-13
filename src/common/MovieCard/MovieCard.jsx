@@ -3,6 +3,7 @@ import { Badge } from "react-bootstrap";
 import "./MovieCard.style.css";
 import { BsFillHeartFill, BsFillHandThumbsUpFill } from "react-icons/bs";
 import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
+import { Link } from 'react-router';
 
 const MovieCard = ({ movie }) => {
   const { data: genreData } = useMovieGenreQuery();
@@ -16,7 +17,7 @@ const MovieCard = ({ movie }) => {
     return genreNameList;
   };
   return (
-    <div className="movie-card-area">
+    <Link to={`/movies/${movie.id}`} className="movie-card-area">
       <div
         style={{
           backgroundImage: `url(https://media.themoviedb.org/t/p/original${movie.poster_path})`,
@@ -32,6 +33,9 @@ const MovieCard = ({ movie }) => {
               </Badge>
             ))}
           </div>
+          <button className="movieCard-detail"> 상세정보 </button>
+              
+          
           <div className="vote_average text-warning">
             <span>
               <BsFillHeartFill />
@@ -49,12 +53,12 @@ const MovieCard = ({ movie }) => {
             {movie.adult ? (
               <Badge bg="danger">"18"</Badge>
             ) : (
-              <Badge bg="success py-3 mb-2 fs-6">ALL</Badge>
+              <Badge bg="success py-2 mb-1 ">ALL</Badge>
             )}
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

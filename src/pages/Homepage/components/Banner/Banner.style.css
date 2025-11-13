@@ -38,7 +38,7 @@
   color:#fff;
   width: 46%;
   padding-left: 5rem;
-  z-index: 2;
+  z-index: 100;
 }
 .banner-area h1{
   font-size: 36px;

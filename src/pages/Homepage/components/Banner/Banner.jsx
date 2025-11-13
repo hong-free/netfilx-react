@@ -5,7 +5,7 @@ import "./Banner.style.css";
 import Carousel from "react-multi-carousel";
 import { BsCaretRightFill, BsFillInfoCircleFill } from "react-icons/bs";
 
-const Banner = () => {
+const Banner = ({ movie }) => {
   const { data, isLoading, isError, error } = usePopularMoviesQuery();
   if (isLoading) {
     return (

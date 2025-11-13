@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, Outlet, useNavigate } from "react-router";
 import "./AppLayout.style.css";
+import { BsPerson } from "react-icons/bs";
 
 const AppLayout = () => {
   const [keyword, setKeyword] = useState("");
@@ -44,6 +45,15 @@ const AppLayout = () => {
               alt="logo"
             />
           </Nav.Link>
+
+          <Nav.Link
+            as={Link}
+            to="/login"
+            className="login-button-m d-block d-lg-none me-3  ms-auto fs-4"
+          >
+            <BsPerson />
+          </Nav.Link>
+
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -58,6 +68,14 @@ const AppLayout = () => {
                 Movie
               </Nav.Link>
             </Nav>
+            <Nav.Link
+              className="login-button-d d-none d-lg-block  fs-4 me-3"
+              as={Link}
+              to="/login"
+            >
+              <BsPerson />
+            </Nav.Link>
+
             <Form className="d-flex" onSubmit={searchByKeyword}>
               <Form.Control
                 type="search"
@@ -67,6 +85,7 @@ const AppLayout = () => {
                 className="me-2 custom-gray-control"
                 aria-label="Search"
               />
+
               <Button variant="outline-danger" type="submit">
                 Search
               </Button>

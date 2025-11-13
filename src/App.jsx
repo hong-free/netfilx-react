@@ -4,7 +4,7 @@ import AppLayout from "./Layout/AppLayout";
 import Homepage from "./pages/Homepage/Homepage";
 import MoviesPage from "./pages/Movies/MoviesPage";
 import MovieDetailPage from "./pages/MovieDetail/MovieDetailPage";
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./pages/Homepage/components/Footer/Footer";
 
@@ -35,7 +35,6 @@ function App() {
         </Route>
         <Route path="footer" element={<Footer />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

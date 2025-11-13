@@ -53,6 +53,7 @@
   position: absolute;
  left:15px;
  bottom: 30px;
+ font-size: 12px;
 }
 .vote_average span,
 .popularity span{
@@ -63,15 +64,20 @@
 position: absolute;
  left:15px;
  bottom: 10px;
+ font-size: 12px;
 }
 
-@media all and (max-width:1024px) {
-.movie-card-area,.movie-card,.movieCard-info{
-   height: 280px;
-  position: relative;
-}
-
-
+.movieCard-detail{
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+  border:1px solid #fff;
+  border-radius: 3px;
+  background-color: transparent;
+  width: 70%;
+  outline:none;
+  color: #fff;
 }
 
 

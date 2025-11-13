@@ -17,7 +17,6 @@ const MoviesPage = () => {
   useEffect(() => {
     setPage(1);
   }, [`${keyword}`]);
- 
 
   const { data, isLoading, isError, error } = useSearchMovieQuery({
     keyword,
@@ -68,7 +67,7 @@ const MoviesPage = () => {
                 <p>{keyword} 찾으시는 영화가 없습니다.</p>
               ) : (
                 data?.results.map((movie, index) => (
-                  <Col key={index} lg={3} xs={6} className="py-3" >
+                  <Col key={index} lg={2} xs={6} className="py-3">
                     <MovieCard movie={movie} />
                   </Col>
                 ))
